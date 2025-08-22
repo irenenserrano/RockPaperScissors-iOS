@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct PlayerVSComputerView: View {
-    var randomRawValue = Int.random(in: 0...2)
+    @State var randomRawValue = Int.random(in: 0...2)
     @Binding var playersChoice: MoveOptionModel
     @EnvironmentObject var counters: CounterVariables
     @Environment(\.dismiss) private var dismiss

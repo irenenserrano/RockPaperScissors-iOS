@@ -13,7 +13,7 @@ struct ContentView: View {
     @StateObject var counters = CounterVariables()
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack{
                 Image(.weatheredPaperBackground)
                 
